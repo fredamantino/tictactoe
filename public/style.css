@@ -1,0 +1,125 @@
+:root {
+  --font-family: 'JetBrains Mono', monospace;
+  --color-light: rgba(255, 255, 255, 0.87);
+  --color-dark: #242424;
+  --color-bg: #1a1a1a;
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --transition-speed: 0.3s;
+  --color-cell: rgba(255, 255, 255, 0.87);
+  --color-win: #28a745;
+  --color-draw: #ffc107;
+  --color-neutral: #888;
+  --color-switch-active: #000000;
+}
+
+.light-mode {
+  --color-light: rgba(0, 0, 0, 0.87);
+  --color-bg: #f8f9fa;
+  --color-cell: rgba(255, 255, 255, 0.87);
+}
+
+.dark-mode {
+  --color-dark: #ffffff;
+  --color-bg: #1a1a1a;
+  --color-cell: #242424;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-light);
+  font-family: var(--font-family);
+  transition: background-color var(--transition-speed);
+}
+
+header,
+footer {
+  text-align: center;
+  margin: 1em 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5em;
+}
+
+.container {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--color-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px auto 0;
+  width: fit-content;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-cell);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.cell:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.cell.x i,
+.cell.o i {
+  font-size: 2.5rem;
+  color: var(--color-neutral);
+}
+
+footer {
+  color: var(--color-light);
+  font-size: 0.8em;
+}
+
+.form-check-input:checked {
+  background-color: var(--color-switch-active);
+  border-color: var(--color-switch-active);
+}
+
+.form-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-mode .form-check-input {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-light);
+}
+
+.btn:hover {
+  color: var(--color-primary-hover);
+}

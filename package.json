@@ -1,0 +1,16 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "Jogo da Velha online com Node.js e Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {},
+  "author": "fredamantino",
+  "license": "MIT"
+}
