@@ -48,6 +48,9 @@ This project is a real-time multiplayer Tic Tac Toe game built with Node.js, Exp
    ```bash
    node server.js
    ```
+      ```bash
+   npm start
+   ```
 
 2. **Open your browser and go to:**
 
