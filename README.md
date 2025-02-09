@@ -26,19 +26,19 @@ This project is a real-time multiplayer Tic Tac Toe game built with Node.js, Exp
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/real-time-multiplayer-tic-tac-toe.git
+   git clone https://github.com/fredamantino/tictactoe.git
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd real-time-multiplayer-tic-tac-toe
+   cd tictactoe
    ```
 
 3. **Install dependencies:**
 
    ```bash
-   npm install
+   npm i
    ```
 
 ## Usage
